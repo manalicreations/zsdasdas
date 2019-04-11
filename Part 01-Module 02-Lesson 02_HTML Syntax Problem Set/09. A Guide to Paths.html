@@ -1,0 +1,296 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>A Guide to Paths</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>HTML Syntax Problem Set</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Welcome to the Problem Set!.html">01. Welcome to the Problem Set!</a>
+    </li>
+    <li class="">
+      <a href="02. Make a Button.html">02. Make a Button</a>
+    </li>
+    <li class="">
+      <a href="03. Make a Button Solution.html">03. Make a Button Solution</a>
+    </li>
+    <li class="">
+      <a href="04. Make All the Headers.html">04. Make All the Headers</a>
+    </li>
+    <li class="">
+      <a href="05. Make a List.html">05. Make a List</a>
+    </li>
+    <li class="">
+      <a href="06. Tree to HTML.html">06. Tree to HTML</a>
+    </li>
+    <li class="">
+      <a href="07. Constructing Links.html">07. Constructing Links</a>
+    </li>
+    <li class="">
+      <a href="08. Add an Image.html">08. Add an Image</a>
+    </li>
+    <li class="">
+      <a href="09. A Guide to Paths.html">09. A Guide to Paths</a>
+    </li>
+    <li class="">
+      <a href="10. Figures.html">10. Figures</a>
+    </li>
+    <li class="">
+      <a href="11. Mockup to Website.html">11. Mockup to Website</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">09. A Guide to Paths</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3><p>A Guide to Paths</p></h3>
+  <div>
+  <p>You'll soon make a website that displays an image that is stored locally on your computer. In order to display a local image, you need to be able to write a <strong>path</strong>.</p>
+<p>If there is a file called <code>index.html</code> in a directory and there is another directory called <code>example/</code> in the same directory, you can access any files in <code>example/</code> from <code>index.html</code> with the URL (path) <code>example/filename.html</code>, e.g. <code>&lt;a href="example/filename.html"&gt;Example Path&lt;/a&gt;</code>.</p>
+<h2 id="paths">Paths</h2>
+<p>A path is a way of describing where a file is stored.</p>
+<p>Think of it like this:</p>
+<p>Anyone in the world can use the address 1600 Pennsylvania Ave NW, Washington DC, USA 20006 to find the White House. A street address is an absolute path to a location.</p>
+<p>But, if you were at the <a href="https://www.google.com/maps/place/Eisenhower+Executive+Office+Building/@38.8974712,-77.0390948,17z/data=!4m7!1m4!3m3!1s0x89b7b7bcdec17ee3:0xf920b148b3d45e45!2s1600+Pennsylvania+Ave+NW,+Washington,+DC+20500!3b1!3m1!1s0x0000000000000000:0x054470506cffbeb3" target="_blank">Eisenhower Executive Office</a>, you could also use the phrase "next door" to find the White House. "Next door" is a relative path because it depends on your current location.</p>
+<p>There are essentially two domains for paths that you'll need to consider as a web developer: paths to find files on your computer, <strong>local</strong> files, and paths to find files on other computers, <strong>external</strong> files.</p>
+<h3 id="local-paths">Local Paths</h3>
+<p>Computers have folders (also called "directories"). Operating systems like Windows, Mac and Linux organize <em>all</em> of your files into a tree of directories called a <strong>file system</strong>. There's a top-most directory, often called the <strong>root</strong>, that contains all of the other directories. Within the root, there are files and directories. Within those directories are more files and more directories. And within those directories are even more files and directories, and so on.</p>
+<p>Compare this part of the file system on my computer:</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>local path directory structure</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/local-paths.png" alt="Local path directory structure screenshot" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>Local path directory structure screenshot</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>to a tree diagram showing the same directory structure:</p></h3>
+  <div>
+  <p>to a tree diagram showing the same directory structure:</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>tree diagram showing the same directory structure</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/directory-structure-tree.png" alt="Tree diagram of directory structure" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>Tree diagram of directory structure</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Every file has an address, which we call the "path."</p></h3>
+  <div>
+  <p>Every file has an address, which we call the "path." An absolute path is written in relation to the computer's root directory. For instance, a file in the Documents folder on a Mac has a path that looks like this:</p>
+<pre><code class="text language-text">/Users/cameron/Documents/file.txt</code></pre>
+<p><code>file.txt</code> is stored inside <code>Documents/</code>. <code>Users/</code>, <code>cameron/</code> and <code>Documents/</code> are all names of directories. <code>Documents/</code> lives inside <code>cameron/</code> and <code>cameron/</code> lives inside <code>Users/</code>. <code>Users/</code> is inside the root directory, which is represented by the first <code>/</code>. The rest of the <code>/</code> are used to separate directories.</p>
+<p>When you open an HTML file in your browser, you're seeing the absolute path to the file on your computer.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>Absolute Path</p></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/absolute-path-browser.png" alt="Absolute Path to index.html" class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p>Absolute Path to index.html</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3><p>This URL will <em>only</em> work for you on your com</p></h3>
+  <div>
+  <p>This URL will <em>only</em> work for you on your computer. As no one else has your file system, this URL is unique to your computer. If you want other people to be able to access it, then you need an…</p>
+<h3 id="external-paths">External Paths</h3>
+<p>The process of loading a website from a URL like <code>https://www.udacity.com</code> mimics opening an HTML file that you've written and saved to your computer. Every website starts with an HTML file. It just so happens that when you want to visit a website, the HTML file that you want to open lives on a different computer. The computer responsible for giving you a website's files is called a <strong>server</strong>.</p>
+<p>Pointing your browser to <code>https://www.udacity.com</code> sends a request to Udacity's server for the HTML file (and others) that your computer needs to load the Udacity website. You can think of <code>udacity.com</code> as the root path of Udacity's server (computer) that anyone can access (the reality of the situation is actually much more complicated but the general idea is true). Unlike your personal computer (for now!), Udacity's servers run software that <strong>expose</strong> files to the web, which means that they make them available to anyone who wants them. Servers have an <strong>external path</strong> that anyone can access and is the reason why the web works.</p>
+<p>Different websites are just different collections of files. Every website is really just a server (or many servers) with an external address, which we call a URL. Servers store files and send them to computers who request them (the requesting computers are called <strong>clients</strong>).</p>
+<p>There are different <strong>protocols</strong> for serving files, the most common of which on the web are HTTP and HTTPS. When you open a file on your own computer, you're using the file protocol. You don't need to know much more about protocols for now, but if you're interested in learning (a lot!) more about HTTP, check out <a href="https://www.udacity.com/course/networking-for-web-developers--ud256" target="_blank">Networking for Web Developers</a>.</p>
+<h3 id="relative-paths">Relative Paths</h3>
+<p>The relative path is similar to the absolute path, but it describes how to find a path to a file from a directory that is not the root directory. Like using the phrase "next door" to tell someone how to find the White House from the Eisenhower Executive Office, a relative path takes advantage of the location of one file to describe where another file can be found.</p>
+<p>Relative paths work the same for both local and external paths. Let's break down two examples of absolute paths to see how relative paths work.</p>
+<p><strong>External</strong>:</p>
+<pre><code>&lt;a href="http://labs.udacity.com/fend/example/hello-world.html"&gt;Hello, world!&lt;/a&gt;</code></pre>
+<p><strong>Local</strong>:</p>
+<pre><code>&lt;a href="/Users/cameron/Udacity/etc/labs/fend/example/hello-world.html"&gt; Hello, world!&lt;/a&gt;</code></pre>
+<p><code>href</code> is really just a path to a file.</p>
+<p>Both examples are links to the same file using absolute paths, but the external example would work for anyone and only my computer can use the link in the local example.</p>
+<p>Pay attention to the <code>fend/example/hello-world.html</code> portion of both paths - they mean the same thing.</p>
+<p>Imagine that you are editing <code>/Users/cameron/Udacity/etc/labs/fend/test.html</code>. <code>test.html</code> can reference <code>hello-world.html</code> by describing how to get from it's location in <code>fend/</code> to <code>hello-world.html</code>. The relative path would look like:</p>
+<pre><code>example/hello-world.html</code></pre>
+<p>This relative path takes advantage of the fact that <code>test.html</code> and <code>example/</code> are in the same directory.</p>
+<p>But what if I'm editing a file in <code>/Users/cameron/Udacity/etc/labs/</code> and I want to write a path to <code>hello-world.html</code>? In that case, the relative path would be:</p>
+<pre><code class="text language-text">fend/example/hello-world.html</code></pre>
+<p>Now that I'm in <code>labs/</code>, not <code>fend/</code>, I have to include <code>fend/</code> in a relative path to <code>hello-world.html</code>.</p>
+<p>To finish this off, let's imagine there are two files:</p>
+<pre><code class="text language-text">http://labs.udacity.com/science/sciences.html</code></pre>
+<p>and</p>
+<pre><code class="text language-text">http://labs.udacity.com/science/physics/relativity.html</code></pre>
+<p>In order to write a relative path from <code>sciences.html</code> to <code>relativity.html</code>, I only need to include the part of the path that describes how to get from <code>science/</code> to <code>relativity.html</code>:</p>
+<pre><code class="html language-html">&lt;a href="physics/relativity.html"&gt;Einstein's Special Relativity&lt;/a&gt;</code></pre>
+<p>And that's it! Now it's time to apply your new skills.</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="10. Figures.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.3.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('09. A Guide to Paths')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>

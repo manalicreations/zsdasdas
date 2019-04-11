@@ -1,0 +1,277 @@
+<!-- udacimak v1.3.0 -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Add an Image</title>
+  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/plyr.css">
+  <link rel="stylesheet" href="../assets/css/katex.min.css">
+  <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="shortcut icon" type="image/png" href="../assets/img/udacimak.png" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav id="sidebar">
+  <div class="sidebar-header">
+    <h3>HTML Syntax Problem Set</h3>
+  </div>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled components">
+    <li class="">
+      <a href="01. Welcome to the Problem Set!.html">01. Welcome to the Problem Set!</a>
+    </li>
+    <li class="">
+      <a href="02. Make a Button.html">02. Make a Button</a>
+    </li>
+    <li class="">
+      <a href="03. Make a Button Solution.html">03. Make a Button Solution</a>
+    </li>
+    <li class="">
+      <a href="04. Make All the Headers.html">04. Make All the Headers</a>
+    </li>
+    <li class="">
+      <a href="05. Make a List.html">05. Make a List</a>
+    </li>
+    <li class="">
+      <a href="06. Tree to HTML.html">06. Tree to HTML</a>
+    </li>
+    <li class="">
+      <a href="07. Constructing Links.html">07. Constructing Links</a>
+    </li>
+    <li class="">
+      <a href="08. Add an Image.html">08. Add an Image</a>
+    </li>
+    <li class="">
+      <a href="09. A Guide to Paths.html">09. A Guide to Paths</a>
+    </li>
+    <li class="">
+      <a href="10. Figures.html">10. Figures</a>
+    </li>
+    <li class="">
+      <a href="11. Mockup to Website.html">11. Mockup to Website</a>
+    </li>
+  </ul>
+
+  <ul class="sidebar-list list-unstyled CTAs">
+    <li>
+      <a href="../index.html" class="article">Back to Home</a>
+    </li>
+  </ul>
+</nav>
+
+    <div id="content">
+      <header class="container-fluild header">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="align-items-middle">
+                <button type="button" id="sidebarCollapse" class="btn btn-toggle-sidebar">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </button>
+
+                <h1 style="display: inline-block">08. Add an Image</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="add-an-image">Add an Image</h2>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <figure class="figure">
+    <img src="img/screen-shot-2018-03-22-at-2.31.53-pm.png" alt="[Puppy image by dbking](https://commons.wikimedia.org/wiki/File%3ASt._Bernard_puppy.jpg) (originally posted to Flickr as 272_7242) [CC BY 2.0](http://creativecommons.org/licenses/by/2.0), via Wikimedia Commons
+
+[Kitten image by Steve-h](https://commons.wikimedia.org/wiki/File%3AGreen_eyes_kitten.jpg) (Flickr: Maggie) [CC BY-SA 2.0](http://creativecommons.org/licenses/by-sa/2.0), via Wikimedia Commons
+
+[Earth image by Norman Kuring](http://visibleearth.nasa.gov/view.php?id&#x3D;78314), NASA GSFC, using data from the VIIRS instrument aboard Suomi NPP." class="img img-fluid">
+    <figcaption class="figure-caption">
+      <p><a href="https://commons.wikimedia.org/wiki/File%3ASt._Bernard_puppy.jpg" target="_blank">Puppy image by dbking</a> (originally posted to Flickr as 272_7242) <a href="http://creativecommons.org/licenses/by/2.0" target="_blank">CC BY 2.0</a>, via Wikimedia Commons</p>
+<p><a href="https://commons.wikimedia.org/wiki/File%3AGreen_eyes_kitten.jpg" target="_blank">Kitten image by Steve-h</a> (Flickr: Maggie) <a href="http://creativecommons.org/licenses/by-sa/2.0" target="_blank">CC BY-SA 2.0</a>, via Wikimedia Commons</p>
+<p><a href="http://visibleearth.nasa.gov/view.php?id=78314" target="_blank">Earth image by Norman Kuring</a>, NASA GSFC, using data from the VIIRS instrument aboard Suomi NPP.</p>
+    </figcaption>
+  </figure>
+</div>
+
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>IMAGES! Images on the web are awesome. Time to make one.</p>
+<p>For this exercise, you'll be linking an image in your Workspace. I'll give you the URL of an image and it will be your job to make it display.</p>
+<p>An image is made with an <code>&lt;img&gt;</code> element. It looks like so:</p>
+<pre><code class="html language-html">&lt;img src="http://somewebsite.com/image.jpg" alt="short description"&gt;</code></pre>
+<p>The source attribute, <code>src</code>, is like the <code>href</code> of a link - it is the URL of the image you want to display. For now, your images will need to be hosted online, which means that the URL will need to start with <code>http://</code> or <code>https://</code>. You'll learn about another way to set image source in the next exercise. The <code>alt</code> attribute stands for "alternative description," which is important for people who use screen readers to browse the web. This is text that will show up in lieu of the actual image.</p>
+<p>An image element is a little different than the elements you've seen before. Images do not need closing tags! (For the eager, these are called "<a href="https://www.w3.org/TR/html52/syntax.html#void-elements" target="_blank">void elements</a>".)</p>
+<p>Here's the <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img" target="_blank">MDN reference about images</a>.</p>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <h2 id="how-to-complete-this-exercise">How to complete this exercise</h2>
+<p>Look at the Workspace, below. You'll find the file index.html inside. Edit index.html in the workspace and watch your website change in the preview panel.</p>
+<p>For this exercise, you need to create an image tag in the space provided and link it to the URL given in the HTML comment. Here's an example of what the HTML for an image element would look like: </p>
+<pre><code class="html language-html">&lt;img src="http://somewebsite.com/image.jpg" alt="short description"&gt;</code></pre>
+<p>I want you to:</p>
+<ol>
+<li>Create an <code>&lt;img&gt;</code> tag at the designated spot in the paragraph below.</li>
+</ol>
+<ul>
+<li>Set the source to: <code>http://udacity.github.io/fend/images/udacity.png</code></li>
+<li>Set the tag's <code>alt</code> attribute to a description of the image (maybe something like, "Udacity logo").</li>
+</ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div class="jumbotron">
+  <h3>Workspace</h3>
+
+  <p class="lead">This section contains either a workspace (it can be a <a href="http://jupyter.org/" target="_blank">Jupyter
+      Notebook</a> workspace or an online code editor work space, etc.) and it cannot be automatically downloaded to be
+    generated here. Please access the classroom with your account and manually download the workspace to your local
+    machine. Note that for some courses, Udacity upload the workspace files onto <a href="https://github.com/udacity"
+      target="_blank">https://github.com/udacity</a>, so you may be able to download them there.</p>
+
+  <h4>Workspace Information:</h4>
+
+  <ul>
+    <li><strong>Default file path:</strong> </li>
+    <li><strong>Workspace type:</strong> html-live</li>
+    <li>
+      <strong>Opened files (when workspace is loaded):</strong>
+      n/a
+    </li>
+
+  </ul>
+</div>
+
+</div>
+<div class="divider"></div><div class="ud-atom">
+  <h3></h3>
+  <div>
+  <p>Try playing around with the URL for the image to see if you can make a different image appear!</p>
+</div>
+
+</div>
+<div class="divider"></div>
+          </div>
+
+          <div class="col-12">
+            <p class="text-right">
+              <a href="09. A Guide to Paths.html" class="btn btn-outline-primary mt-4" role="button">Next Concept</a>
+            </p>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <p class="text-center">
+                <a href="https://github.com/udacimak/udacimak#readme" target="_blank">udacimak v1.3.0</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+
+  <script src="../assets/js/jquery-3.3.1.min.js"></script>
+  <script src="../assets/js/plyr.polyfilled.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <script src="../assets/js/katex.min.js"></script>
+  <script>
+    // Initialize Plyr video players
+    const players = Array.from(document.querySelectorAll('video')).map(p => new Plyr(p));
+
+    // render math equations
+    let elMath = document.getElementsByClassName('mathquill');
+    for (let i = 0, len = elMath.length; i < len; i += 1) {
+      const el = elMath[i];
+
+      katex.render(el.textContent, el, {
+        throwOnError: false
+      });
+    }
+
+    // this hack will make sure Bootstrap tabs work when using Handlebars
+    if ($('#question-tabs').length && $('#user-answer-tabs').length) {
+      $("#question-tabs a.nav-link").on('click', function () {
+        $("#question-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+      $("#user-answer-tabs a.nav-link").on('click', function () {
+        $("#user-answer-tab-contents .tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    } else {
+      $("a.nav-link").on('click', function () {
+        $(".tab-pane").hide();
+        $($(this).attr("href")).show();
+      });
+    }
+
+    // side bar events
+    $(document).ready(function () {
+      $("#sidebar").mCustomScrollbar({
+        theme: "minimal"
+      });
+
+      $('#sidebarCollapse').on('click', function () {
+        $('#sidebar, #content').toggleClass('active');
+        $('.collapse.in').toggleClass('in');
+        $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+      });
+
+      // scroll to first video on page loading
+      if ($('video').length) {
+        $('html,body').animate({ scrollTop: $('div.plyr').prev().offset().top});
+      }
+
+      // auto play first video: this may not work with chrome/safari due to autoplay policy
+      if (players && players.length > 0) {
+        players[0].play();
+      }
+
+      // scroll sidebar to current concept
+      const currentInSideBar = $( "ul.sidebar-list.components li a:contains('08. Add an Image')" )
+      currentInSideBar.css( "text-decoration", "underline" );
+      $("#sidebar").mCustomScrollbar('scrollTo', currentInSideBar);
+    });
+  </script>
+</body>
+
+</html>
